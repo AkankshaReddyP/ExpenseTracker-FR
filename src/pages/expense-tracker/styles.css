@@ -1,0 +1,192 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.expense-tracker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.container {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.Balance, .summary {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.Balance h2, .summary h4, .summary p {
+    margin: 0;
+}
+
+.Balance h2 {
+    color: #28a745;
+}
+
+.Balance h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.summary {
+    display: flex;
+    justify-content: space-around;
+}
+
+.income, .Expense {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.income h4, .Expense h4 {
+    color: #28a745;
+}
+
+.Expense h4 {
+    color: #dc3545;
+}
+
+.add-transaction {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.add-transaction input[type="text"],
+.add-transaction input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.add-transaction label {
+    margin-right: 10px;
+    color: #555;
+}
+
+.add-transaction input[type="radio"] {
+    margin-right: 5px;
+}
+
+.add-transaction button {
+    background: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.add-transaction button:hover {
+    background: #0056b3;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-bottom: 0;
+}
+
+.sign-out {
+    background: #dc3545;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.sign-out:hover {
+    background: #c82333;
+}
+
+.Transactions {
+    max-width: 600px;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+    position: relative;
+    
+}
+
+.Transactions h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.Transactions ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.Transactions li {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.Transactions li h4 {
+    margin: 0 0 5px 0;
+}
+
+.Transactions li p {
+    margin: 0;
+}
+
+.Transactions li label {
+    font-weight: bold;
+}
